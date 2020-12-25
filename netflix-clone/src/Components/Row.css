@@ -1,3 +1,7 @@
+.Row {
+  margin-left: 30px;
+}
+
 .movies-container {
   display: flex;
   flex-wrap: nowrap;

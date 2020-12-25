@@ -25,9 +25,12 @@ function Row({title, fetchUrl, isLargeRow}) {
                     <img
                         className={`poster ${isLargeRow && 'posterLarge'}`}
                         key={movie.id}
-                        src={`${imageUrl}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
-                        alt={movie.title ? movie.title : movie.original_name}
-                        onError={(event)=>{event.target.src=no_image_poster}}
+                        src={
+                            ((isLargeRow && !movie.poster_path) || (!isLargeRow && !movie.backdrop_path))
+                                ? no_image_poster
+                                : `${imageUrl}${isLargeRow ? movie.poster_path : movie.backdrop_path}`
+                        }
+                        alt={movie?.title || movie?.name || movie?.original_name}
                     />
                 ))}
             </div>
