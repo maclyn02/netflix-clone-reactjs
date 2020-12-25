@@ -1,0 +1,7 @@
+.Banner {
+  background-image: url("../images/no_image.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 50vh;
+  height: 50vh;
+  width: 100vw;
+}
