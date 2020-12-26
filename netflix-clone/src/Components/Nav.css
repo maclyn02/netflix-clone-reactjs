@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 
   transition-timing-function: ease-in;
   transition: all 0.6ms;
