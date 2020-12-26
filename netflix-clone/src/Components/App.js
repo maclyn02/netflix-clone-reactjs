@@ -3,13 +3,14 @@ import requests from '../requests'
 import Row from './Row' 
 import tmdb_logo from '../images/tmdb_logo.svg' 
 import Banner from './Banner' 
+import Nav from './Nav'
 
 function App() {
   return (
     <div className="App">
-      {/* Navbar */}
 
-      {/* Banner */}
+      <Nav />
+
       <Banner />
       
       <div className='rows-container'>

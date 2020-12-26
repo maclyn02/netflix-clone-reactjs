@@ -1,0 +1,28 @@
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  transition-timing-function: ease-in;
+  transition: all 0.6ms;
+}
+
+.nav-menu {
+  margin-right: 30px;
+}
+
+.nav-logo {
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  color: crimson;
+  text-shadow: 10px, 10px, crimson;
+}
+
+.nav-black {
+  background-color: rgb(10, 8, 8);
+}
